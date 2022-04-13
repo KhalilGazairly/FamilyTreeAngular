@@ -18,6 +18,14 @@ I don't like the way that I coded it, because I didn't do it Simple.
 If I have the time, I'll try to code it again by another way. 
   
 
+## Screenshot
+
+<img src="./src/assets/screencapture.png" />
+  
+
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
