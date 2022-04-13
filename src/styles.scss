@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background: linear-gradient(hsl(140, 17%, 55%), hsl(199, 80%, 52%));
+  min-height: 100vh;
+  font-family: Oxygen, sans-serif;
+}

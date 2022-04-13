@@ -1,0 +1,109 @@
+<div id="container">
+  <ul class="tree">
+    <li>
+      <a href="#" *ngIf="Parent">
+        <img src="{{Parent[0][0].imagePath}}" alt>
+
+        {{Parent[0][0].name}}
+        <time datetime="1954">{{Parent[0][0].code}}</time>
+      </a>
+
+
+      <!-- ---------------------------- first child -------------------------------------- -->
+      <ul *ngFor="let FirstClids of FirstChild">
+        <li>
+          <a href="#">
+            <img src="{{FirstClids[0].imagePath}}" alt>
+            {{FirstClids[0].name}}
+            <time datetime="1960">{{FirstClids[0].code}}</time>
+          </a>
+          <!-- ---------------------------- second child -------------------------------------- -->
+
+          <ul>
+            <li *ngFor="let secondsChild of secondChild">
+              <a href="#">
+                <img src="{{secondsChild[0].imagePath}}" alt>
+                {{secondsChild[0].name}}ibra
+                <time datetime="1960"> {{secondsChild[0].code}}</time>
+              </a>
+
+              <!-- ---------------------------- third child -------------------------------------- -->
+              <ul>
+
+                <li *ngFor="let thirdChild of thirdChild">
+                  <a href="#">
+                    <img src="{{thirdChild[0].imagePath}}" alt>
+                    {{thirdChild[0].name}}
+                    <time datetime="1960"> {{thirdChild[0].code}}</time>
+                  </a>
+
+
+                <li *ngFor="let thirdChild of thirdChild">
+                  <a href="#">
+                    <img src="{{thirdChild[1].imagePath}}" alt>
+                    {{thirdChild[1].name}}
+                    <time datetime="1960"> {{thirdChild[1].code}}</time>
+                  </a>
+
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- ---------------------------- first child -------------------------------------- -->
+
+        <li><a href="#">
+            <img src="{{FirstClids[1].imagePath}}" alt>
+            {{FirstClids[1].name}}
+            <time datetime="1980">{{FirstClids[1].code}}</time>
+          </a>
+
+          <!-- ---------------------------- second child -------------------------------------- -->
+
+          <ul *ngFor="let secondsChild of secondChild">
+            <li>
+              <a href="#">
+                <img src="{{secondsChild[1].imagePath}}" alt>
+                {{secondsChild[1].name}}
+                <time datetime="1960"> {{secondsChild[1].code}}</time>
+              </a>
+              <!-- ---------------------------- third child -------------------------------------- -->
+
+              <ul>
+                <li *ngFor="let thirdChild of thirdChild">
+                  <a href="#">
+                    <img [src]="thirdChild[2].imagePath" alt>
+                    {{thirdChild[2].name}}
+                    <time datetime="1960"> {{thirdChild[2].code}}</time>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ---------------------------- second 2 child -------------------------------------- -->
+
+            <li>
+              <a href="#">
+                <img src="{{secondsChild[2].imagePath}}" alt>
+                {{secondsChild[2].name}}
+                <time datetime="1960"> {{secondsChild[2].code}}</time>
+              </a>
+              <!-- ---------------------------- third 2 child -------------------------------------- -->
+
+              <ul>
+                <li *ngFor="let thirdChild of thirdChild">
+                  <a href="#">
+                    <img src="{{thirdChild[3].imagePath}}" alt>
+                    {{thirdChild[3].name}}
+                    <time datetime="1960"> {{thirdChild[3].code}}</time>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+    </li>
+  </ul>
+</div>
