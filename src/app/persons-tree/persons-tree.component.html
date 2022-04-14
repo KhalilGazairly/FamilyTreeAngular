@@ -4,7 +4,7 @@
       <a href="#" *ngIf="Parent">
         <img src="{{Parent[0][0].imagePath}}" alt>
 
-        {{Parent[0][0].name}}
+        {{Parent[0][0].name | titlecase}}
         <p class="0001">{{Parent[0][0].code}}</p>
       </a>
 
@@ -14,7 +14,7 @@
         <li>
           <a href="#">
             <img src="{{FirstClids[0].imagePath}}" alt>
-            {{FirstClids[0].name}}
+            {{FirstClids[0].name | titlecase}}
             <p class="0001-0003">{{FirstClids[0].code}}</p>
           </a>
           <!-- ---------------------------- second child -------------------------------------- -->
@@ -23,7 +23,7 @@
             <li *ngFor="let secondsChild of secondChild">
               <a href="#">
                 <img src="{{secondsChild[0].imagePath}}" alt>
-                {{secondsChild[0].name}}
+                {{secondsChild[0].name | titlecase}}
                 <p class="0001-0003-0004"> {{secondsChild[0].code}}</p>
               </a>
 
@@ -33,7 +33,7 @@
                 <li *ngFor="let thirdChild of thirdChild">
                   <a href="#">
                     <img src="{{thirdChild[0].imagePath}}" alt>
-                    {{thirdChild[0].name}}
+                    {{thirdChild[0].name | titlecase}}
                     <p class="0001-0003-0004-0002"> {{thirdChild[0].code}}</p>
                   </a>
 
@@ -41,7 +41,7 @@
                 <li *ngFor="let thirdChild of thirdChild">
                   <a href="#">
                     <img src="{{thirdChild[1].imagePath}}" alt>
-                    {{thirdChild[1].name}}
+                    {{thirdChild[1].name | titlecase}}
                     <p class="0001-0003-0004-0007"> {{thirdChild[1].code}}</p>
                   </a>
 
@@ -54,7 +54,7 @@
 
         <li><a href="#">
             <img src="{{FirstClids[1].imagePath}}" alt>
-            {{FirstClids[1].name}}
+            {{FirstClids[1].name | titlecase}}
             <p class="0001-0010">{{FirstClids[1].code}}</p>
           </a>
 
@@ -64,7 +64,7 @@
             <li>
               <a href="#">
                 <img src="{{secondsChild[1].imagePath}}" alt>
-                {{secondsChild[1].name}}
+                {{secondsChild[1].name | titlecase}}
                 <p class="0001-0010-0005"> {{secondsChild[1].code}}</p>
               </a>
               <!-- ---------------------------- third child -------------------------------------- -->
@@ -73,7 +73,7 @@
                 <li *ngFor="let thirdChild of thirdChild">
                   <a href="#">
                     <img [src]="thirdChild[2].imagePath" alt>
-                    {{thirdChild[2].name}}
+                    {{thirdChild[2].name | titlecase}}
                     <p class="0001-0010-0006"> {{thirdChild[2].code}}</p>
                   </a>
                 </li>
@@ -85,7 +85,7 @@
             <li>
               <a href="#">
                 <img src="{{secondsChild[2].imagePath}}" alt>
-                {{secondsChild[2].name}}
+                {{secondsChild[2].name | titlecase}}
                 <p class="0001-0010-0005-0008"> {{secondsChild[2].code}}</p>
               </a>
               <!-- ---------------------------- third 2 child -------------------------------------- -->
@@ -94,7 +94,7 @@
                 <li *ngFor="let thirdChild of thirdChild">
                   <a href="#">
                     <img src="{{thirdChild[3].imagePath}}" alt>
-                    {{thirdChild[3].name}}
+                    {{thirdChild[3].name | titlecase}}
                     <p class="0001-0010-0006-0009"> {{thirdChild[3].code}}</p>
                   </a>
                 </li>
