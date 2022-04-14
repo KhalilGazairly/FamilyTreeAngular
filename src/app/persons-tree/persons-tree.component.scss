@@ -13,7 +13,7 @@
 .tree {
   width: 100%;
 }
-.tree time {
+.tree p {
   display: block;
   font-size: .8rem;
   margin-top: .5rem;
@@ -24,12 +24,12 @@
   margin-bottom: 1rem;
   width: 150px;
 }
-.tree time:before {
-  content: "(";
-}
-.tree time:after {
-  content: ")";
-}
+// .tree p:before {
+//   content: "(";
+// }
+// .tree p:after {
+//   content: ")";
+// }
 .tree, .tree ul {
 	padding-top: 20px;
   position: relative;
@@ -130,7 +130,7 @@
   }
 }
 @media all and (max-width: 500px) {
-  .tree time {
+  .tree p {
     display: inline-block;
   }
   .tree li {
